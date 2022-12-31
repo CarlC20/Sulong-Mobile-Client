@@ -1,15 +1,15 @@
 // REDUX
-import { Provider } from "react-redux";
-import store from "./redux/store";
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
-import React from "react";
-import { StyleSheet, Text } from "react-native";
-import { useFonts } from "expo-font";
-import { externalStyle } from "./styles/externalStyle";
+import React from 'react';
+import { StyleSheet, Text } from 'react-native';
+import { useFonts } from 'expo-font';
+import { externalStyle } from './styles/externalStyle';
 
 // NAVIGATION
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // COMPONENTS PAGE
 import {
   Announcement,
@@ -32,14 +32,14 @@ import {
   Privacy,
   Terms,
   Sos,
-} from "./components";
-import Notifications from "./components/Notifications";
+} from './components';
+import Notifications from './components/Notifications';
 
 export default function App() {
   const Stack = createNativeStackNavigator();
   const [loaded] = useFonts({
-    regular: require("./assets/fonts/Poppins-Regular.ttf"),
-    semibold: require("./assets/fonts/Poppins-SemiBold.ttf"),
+    regular: require('./assets/fonts/Poppins-Regular.ttf'),
+    semibold: require('./assets/fonts/Poppins-SemiBold.ttf'),
   });
   if (!loaded) {
     return null;
@@ -52,7 +52,7 @@ export default function App() {
             name="home"
             component={Home}
             options={(props) => ({
-              title: "",
+              title: '',
               // headerShadowVisible: false,
               headerStyle: styles.semibold17,
               headerLeft: () => <HomeHeaderLeft {...props} />,
@@ -63,7 +63,7 @@ export default function App() {
             name="guide"
             component={Guide}
             options={() => ({
-              title: "",
+              title: '',
               headerTitle: () => <Text style={styles.semibold17}>Guide</Text>,
             })}
           />
@@ -71,7 +71,7 @@ export default function App() {
             name="dashboard"
             component={Dashboard}
             options={() => ({
-              title: "",
+              title: '',
               headerTitle: () => (
                 <Text style={styles.semibold17}>Dashboard</Text>
               ),
@@ -81,7 +81,7 @@ export default function App() {
             name="sos"
             component={Sos}
             options={(props) => ({
-              title: "",
+              title: '',
               headerTitle: () => <Text style={styles.semibold17}>SOS</Text>,
             })}
           />
@@ -89,7 +89,7 @@ export default function App() {
             name="about_us"
             component={AboutUs}
             options={() => ({
-              title: "",
+              title: '',
               headerTitle: () => (
                 <Text style={styles.semibold17}>About Us</Text>
               ),
@@ -99,7 +99,7 @@ export default function App() {
             name="announcement"
             component={Announcement}
             options={() => ({
-              title: "",
+              title: '',
               headerTitle: () => (
                 <Text style={styles.semibold17}>Announcement</Text>
               ),
@@ -109,7 +109,7 @@ export default function App() {
             name="emergency"
             component={Emergency}
             options={() => ({
-              title: "",
+              title: '',
               headerTitle: () => (
                 <Text style={styles.semibold17}>Emergency</Text>
               ),
@@ -119,7 +119,7 @@ export default function App() {
             name="incident_report"
             component={IncidentReport}
             options={() => ({
-              title: "",
+              title: '',
               headerTitle: () => (
                 <Text style={styles.semibold17}>Incident Report</Text>
               ),
@@ -129,7 +129,7 @@ export default function App() {
             name="login"
             component={Login}
             options={() => ({
-              title: "",
+              title: '',
               header: () => {},
               // headerTitle: () => <Text style={styles.semibold17}>Login</Text>,
             })}
@@ -138,7 +138,7 @@ export default function App() {
             name="profile"
             component={Profile}
             options={() => ({
-              title: "",
+              title: '',
               headerTitle: () => <Text style={styles.semibold17}>Profile</Text>,
             })}
           />
@@ -146,11 +146,11 @@ export default function App() {
             name="register"
             component={Register}
             options={() => ({
-              title: "",
+              title: '',
               header: () => {},
             })}
           />
-          <Stack.Screen
+          {/* <Stack.Screen
             name="setting"
             component={Setting}
             options={() => ({
@@ -159,12 +159,12 @@ export default function App() {
                 <Text style={styles.semibold17}>Settings</Text>
               ),
             })}
-          />
+          /> */}
           <Stack.Screen
             name="request_inquiries"
             component={RequestInquiries}
             options={() => ({
-              title: "",
+              title: '',
               headerTitle: () => (
                 <Text style={styles.semibold17}>Request Inquiries</Text>
               ),
@@ -174,7 +174,7 @@ export default function App() {
             name="request_password"
             component={RequestPassword}
             options={() => ({
-              title: "",
+              title: '',
               header: () => {},
             })}
           />
@@ -182,7 +182,7 @@ export default function App() {
             name="reservation"
             component={Reservation}
             options={() => ({
-              title: "",
+              title: '',
               headerTitle: () => (
                 <Text style={styles.semibold17}>Reservation</Text>
               ),
@@ -192,7 +192,7 @@ export default function App() {
             name="reset_password"
             component={ResetPassword}
             options={() => ({
-              title: "",
+              title: '',
               header: () => {},
             })}
           />
@@ -200,7 +200,7 @@ export default function App() {
             name="privacy"
             component={Privacy}
             options={() => ({
-              title: "",
+              title: '',
               headerTitle: () => (
                 <Text style={styles.semibold17}>Privacy and Policy</Text>
               ),
@@ -210,7 +210,7 @@ export default function App() {
             name="terms"
             component={Terms}
             options={() => ({
-              title: "",
+              title: '',
               headerTitle: () => (
                 <Text style={styles.semibold17}>Terms and Conditions</Text>
               ),
@@ -220,7 +220,7 @@ export default function App() {
             name="notifications"
             component={Notifications}
             options={() => ({
-              title: "",
+              title: '',
               headerTitle: () => (
                 <Text style={styles.semibold17}>Notifications</Text>
               ),
