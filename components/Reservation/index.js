@@ -5,6 +5,7 @@ import {
   TextInput,
   TouchableOpacity,
   Keyboard,
+  ScrollView,
 } from "react-native";
 import React, { useState } from "react";
 import { externalStyle } from "../../styles/externalStyle";
@@ -28,7 +29,7 @@ const Reservation = (props) => {
     "Stage",
     "Court",
     "Clinic",
-    "Others (Please specify)",
+    "Others",
   ];
   const notficationHandler = async () => {
     const newData = {
@@ -78,6 +79,7 @@ const Reservation = (props) => {
   };
   return (
     <View style={{ backgroundColor: colors.white, height: "100%" }}>
+      <ScrollView>
       {dropDown && (
         <SelectModal
           setType={setFacility}
@@ -114,6 +116,7 @@ const Reservation = (props) => {
             multiline={true}
             autoFocus={false}
             onChangeText={(e) => setDescription(e)}
+            placeholder={" Address \n \n To whom it may concern \n \n (This is where the content of your letter goes please include the time and date of your reservation) \n \n Thank you."}
           />
         </View>
         {isLoading ? (
@@ -127,7 +130,9 @@ const Reservation = (props) => {
             </View>
           </TouchableOpacity>
         )}
+        
       </View>
+      </ScrollView>
     </View>
   );
 };

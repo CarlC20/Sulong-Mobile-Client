@@ -39,6 +39,22 @@ const Guide = (props) => {
       title: "SOS",
       body: "In SOS, period, Inside the SOS, you can view all of the Contact Details of all the emergency Hotline Numbers and Contact Numbers so you can directly contact the emergency in case of trouble within the barangay",
     },
+    {
+      title: "Format Example",
+      body: " Address \n \n To whom it may concern \n \n (This is where the content of your letter goes) \n \n Thank you.",
+    },
+    {
+      title: "Letter Example for Incident Report",
+      body: " Address \n \n To whom it may concern \n \n There is a fire emergency going on at the vicinity of (name of the street) right now (time of the incident), request immediate assistance \n \n Thank you.",
+    },
+    {
+      title: "Letter Example for Reservation",
+      body: " Title: Basketball Playoffs \n \n Facility: Court \n \n To whom it may concern \n \n We would like to inform (Name of Employee in charge) that we want to rent out the basketball court (Time and date of the reservation) \n \n Thank you.",
+    },
+    {
+      title: "Letter Example for Request",
+      body: " Address \n \n To whom it may concern \n \n I would like to request an Barangay ID for (Reason of your request) \n \n Thank you.",
+    },
   ];
   const searchFilter = data.filter(
     (d) =>

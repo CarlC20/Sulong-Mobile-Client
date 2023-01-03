@@ -75,12 +75,12 @@ const Home = (props) => {
       page: "about_us",
       icon: <AboutUs />,
     },
-    {
-      label: "Settings",
-      // color: colors.green,
-      page: "setting",
-      icon: <Settings />,
-    },
+    // {
+    //   label: "Settings",
+    //   // color: colors.green,
+    //   page: "setting",
+    //   icon: <Settings />,
+    // },
     {
       label: "Logout",
       // color: colors.green,
@@ -118,7 +118,7 @@ const Home = (props) => {
               }}
             >
               <View
-                style={[styles.homeCard, { backgroundColor: colors.darkgray }]}
+                style={[styles.homeCard, { backgroundColor: colors.greens }]}
               >
                 {item.icon}
                 <Text style={styles.homeTitle}>{item.label}</Text>

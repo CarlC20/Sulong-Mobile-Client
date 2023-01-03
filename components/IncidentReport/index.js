@@ -27,7 +27,7 @@ const IncidentReport = (props) => {
     "Missing Person",
     "Riot",
     "Missing Pet",
-    "Others (Please specify)",
+    "Others",
   ];
   const notficationHandler = async () => {
     const newData = {
@@ -105,6 +105,7 @@ const IncidentReport = (props) => {
             multiline={true}
             autoFocus={!dropDown}
             onChangeText={(e) => setDescription(e)}
+            placeholder={" Address \n \n To whom it may concern \n \n (This is where the content of your letter goes) \n \n Thank you."}
           />
         </View>
         {isLoading ? (

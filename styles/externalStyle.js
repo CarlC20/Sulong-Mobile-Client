@@ -24,7 +24,7 @@ export const externalStyle = {
     marginLeft: 5,
     fontSize: 15,
     fontFamily: "semibold",
-    color: colors.white,
+    color: colors.black,
   },
   semibold17: {
     fontFamily: "semibold",
@@ -85,13 +85,13 @@ export const externalStyle = {
   headerButton: {
     borderRadius: 8,
     borderWidth: 2,
-    borderColor: colors.gray,
-    backgroundColor: colors.black,
+    borderColor: colors.black,
+    backgroundColor: colors.greens,
   },
   headerButtonText: {
     fontFamily: "regular",
     paddingVertical: 5,
-    color: "white",
+    color: "black",
     marginTop: 2,
     fontSize: 13,
     paddingHorizontal: 15,
@@ -158,7 +158,7 @@ export const externalStyle = {
     alignItems: "center",
     borderRadius: 20,
     margin: 10,
-    backgroundColor: colors.black,
+    backgroundColor: colors.greens,
   },
   updateProfileWrapper: {
     alignItems: "center",
@@ -166,7 +166,7 @@ export const externalStyle = {
     justifyContent: "center",
   },
   updateProfileText: {
-    color: colors.white,
+    color: colors.black,
   },
   // announcement end here
   loading: {
@@ -235,11 +235,11 @@ export const externalStyle = {
     width: "100%",
     padding: 10,
     borderRadius: 20,
-    backgroundColor: "black",
+    backgroundColor: colors.greens,
   },
   submitText: {
     fontFamily: "semibold",
-    color: colors.white,
+    color: colors.black,
     textAlign: "center",
     fontSize: 17,
   },

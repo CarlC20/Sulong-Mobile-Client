@@ -26,7 +26,7 @@ const RequestInquiries = (props) => {
     "Barangay Id",
     "Business Permit",
     "Travel Pass",
-    "Others (Please specify)",
+    "Others",
   ];
   const notficationHandler = async () => {
     const newData = {
@@ -106,6 +106,7 @@ const RequestInquiries = (props) => {
             multiline={true}
             autoFocus={false}
             onChangeText={(e) => setDescription(e)}
+            placeholder={" Address \n \n To whom it may concern \n \n (This is where the content of your letter goes) \n \n Thank you."}
           />
         </View>
         {isLoading ? (

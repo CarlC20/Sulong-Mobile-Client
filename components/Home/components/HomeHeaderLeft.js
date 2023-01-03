@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 import Logo from "../../Svg/Logo";
 import { externalStyle } from "../../../styles/externalStyle";
@@ -14,8 +14,11 @@ export default function HomeHeaderLeft() {
           },
         ]}
       >
-        <Logo />
-        <Text numberOfLines={1} style={[styles.semibold17, { marginLeft: 7 }]}>
+        {/* <Logo /> */}
+        <Image
+            source={require("../../../assets/favicon.png")}
+          />
+        <Text numberOfLines={1} style={[styles.semibold17, { marginLeft: 7, top: 5 }]}>
           Sulong
         </Text>
       </View>

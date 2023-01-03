@@ -11,4 +11,5 @@ export default {
   lightred: "#dc3535",
   green: "#82cd47",
   yellow: "#ffbf00",
+  greens: "#5bd8d0",
 };
